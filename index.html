@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Carter & Blake - Political strategy, campaigns, data and public affairs.">
+    <title>Carter & Blake</title>
+    <link rel="preload" href="assets/hero-collage.png" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <svg class="svg-defs" aria-hidden="true">
+      <symbol id="icon-target" viewBox="0 0 64 64">
+        <circle cx="32" cy="32" r="22"></circle><circle cx="32" cy="32" r="12"></circle><circle cx="32" cy="32" r="4"></circle>
+        <path d="M32 3v12M32 49v12M3 32h12M49 32h12"></path>
+      </symbol>
+      <symbol id="icon-megaphone" viewBox="0 0 64 64">
+        <path d="M10 35h10l28 12V17L20 29H10z"></path><path d="M20 35l5 15h9l-7-14"></path>
+        <path d="M54 25l6-4M56 33h7M54 41l6 4"></path>
+      </symbol>
+      <symbol id="icon-chart" viewBox="0 0 64 64">
+        <path d="M10 52h44"></path><path d="M16 52V34h9v18M30 52V22h9v30M44 52V12h9v40"></path><path d="M14 23l13-9 10 7 15-15"></path>
+      </symbol>
+      <symbol id="icon-bank" viewBox="0 0 64 64">
+        <path d="M8 25h48L32 10zM13 50h38M10 56h44"></path><path d="M17 25v25M29 25v25M41 25v25M53 25v25"></path>
+      </symbol>
+      <symbol id="icon-knight" viewBox="0 0 64 64">
+        <path d="M21 50h24M18 56h30M25 50c1-11 12-12 12-24 0-7-5-11-11-11h-6l7 8-8 2-5 9h9"></path><path d="M31 13l5-7v11"></path>
+      </symbol>
+      <symbol id="icon-phone" viewBox="0 0 64 64">
+        <rect x="21" y="8" width="22" height="48" rx="4"></rect><path d="M27 14h10M31 49h2"></path>
+      </symbol>
+      <symbol id="icon-people" viewBox="0 0 64 64">
+        <circle cx="32" cy="23" r="8"></circle><circle cx="16" cy="28" r="6"></circle><circle cx="48" cy="28" r="6"></circle>
+        <path d="M20 51v-5c0-8 5-13 12-13s12 5 12 13v5M7 51v-4c0-6 4-10 10-10M57 51v-4c0-6-4-10-10-10"></path>
+      </symbol>
+      <symbol id="icon-pie" viewBox="0 0 64 64">
+        <path d="M33 8v25h23C55 19 46 9 33 8z"></path><path d="M29 12a22 22 0 1 0 22 25H29z"></path>
+      </symbol>
+      <symbol id="icon-bulb" viewBox="0 0 64 64">
+        <path d="M23 42c-4-3-7-8-7-15a16 16 0 0 1 32 0c0 7-3 12-8 15l-2 7H25zM25 55h14M27 60h10"></path>
+        <path d="M32 2v8M12 11l6 6M52 11l-6 6"></path>
+      </symbol>
+      <symbol id="icon-shield" viewBox="0 0 64 64">
+        <path d="M32 6l20 8v16c0 14-8 24-20 29-12-5-20-15-20-29V14z"></path><path d="M32 17v28M23 36l9 9 9-9"></path>
+      </symbol>
+      <symbol id="icon-handshake" viewBox="0 0 64 64">
+        <path d="M22 36l8 8c3 3 7 3 10 0l12-12"></path><path d="M25 21l8-5 9 8 7-4 10 14-9 7"></path>
+        <path d="M5 34l10-15 10 6-11 18zM17 39l9 9M23 44l8 8M31 48l5 5"></path>
+      </symbol>
+      <symbol id="icon-clipboard" viewBox="0 0 64 64">
+        <rect x="18" y="11" width="28" height="45" rx="3"></rect><path d="M26 11c1-5 11-5 12 0v5H26zM25 29l4 4 8-10M25 43h15"></path>
+      </symbol>
+      <symbol id="icon-compass" viewBox="0 0 64 64">
+        <circle cx="32" cy="32" r="23"></circle><path d="M39 14l-5 22-17 14 6-22z"></path><circle cx="32" cy="32" r="4"></circle>
+      </symbol>
+      <symbol id="icon-award" viewBox="0 0 64 64">
+        <path d="M18 24a14 14 0 1 0 28 0 14 14 0 0 0-28 0z"></path><path d="M25 38l-5 17 12-7 12 7-5-17M25 24l5 5 10-12"></path>
+      </symbol>
+      <symbol id="icon-users-network" viewBox="0 0 64 64">
+        <circle cx="17" cy="18" r="6"></circle><circle cx="47" cy="18" r="6"></circle><circle cx="32" cy="44" r="6"></circle>
+        <path d="M22 22l6 13M42 22l-6 13M23 45H9v-4c0-6 4-10 8-10s8 4 8 10M55 45H41v-4c0-6 4-10 8-10s8 4 8 10"></path>
+      </symbol>
+    </svg>
+
+    <main class="page">
+      <section class="hero" id="accueil">
+        <span class="mega-anchor" id="mega-expertises" aria-hidden="true"></span>
+        <img class="hero-visual" src="assets/hero-collage.png" alt="" aria-hidden="true">
+        <div class="hero-veil"></div>
+        <div class="hero-light-lines" aria-hidden="true">
+          <span class="light-line line-a"></span>
+          <span class="light-line line-b"></span>
+          <span class="light-line line-c"></span>
+          <span class="light-line line-d"></span>
+          <span class="light-line line-e"></span>
+          <span class="light-line line-f"></span>
+        </div>
+
+        <header class="topbar">
+          <a class="brand" href="#accueil" aria-label="Carter & Blake">
+            <img src="assets/brand-mark.png" alt="" aria-hidden="true">
+            <span class="brand-rule"></span>
+            <span class="brand-copy">
+              <strong>Carter <span>&amp;</span> Blake</strong>
+              <small>Political Strategy &amp; Campaigns</small>
+            </span>
+          </a>
+          <nav class="nav" aria-label="Navigation principale">
+            <a class="nav-expertise" href="#mega-expertises" aria-haspopup="true">Expertises</a>
+            <a href="methodologie.html">Méthodologie</a>
+            <a href="technologies.html">Technologies</a>
+            <a href="accompagnement.html">Accompagnement</a>
+            <a href="a-propos.html">À propos</a>
+            <a href="contact.html">Contact</a>
+            <a class="nav-cta" href="contact.html">Nous contacter</a>
+          </nav>
+        </header>
+
+        <div class="mega-menu" aria-label="Nos expertises">
+          <aside class="mega-intro">
+            <div class="mega-intro-copy">
+              <h2>Nos expertises,<br>votre <span>avantage</span></h2>
+              <i aria-hidden="true"></i>
+              <p>Un éventail complet d’expertises pour construire des stratégies gagnantes et façonner l’opinion publique.</p>
+              <div class="mega-divider"></div>
+              <div class="mega-integrated">
+                <svg><use href="#icon-compass"></use></svg>
+                <div>
+                  <h3>Une expertise intégrée</h3>
+                  <p>De la stratégie à l’exécution, nous combinons expertise humaine, créativité et technologie pour maximiser votre impact.</p>
+                </div>
+              </div>
+              <a class="mega-approach" href="expertises.html">Découvrir notre approche <span>→</span></a>
+            </div>
+            <img src="assets/mega-city.png" alt="" aria-hidden="true">
+          </aside>
+
+          <div class="mega-grid">
+            <article class="mega-card" style="--card-bg: url('assets/card-bg-1.png')">
+              <svg><use href="#icon-knight"></use></svg>
+              <h3>Stratégie politique</h3>
+              <i aria-hidden="true"></i>
+              <p>Positionner, structurer et planifier pour gagner.</p>
+              <ul>
+                <li>Vision &amp; positionnement</li>
+                <li>Analyse politique &amp; benchmark</li>
+                <li>Plateforme &amp; messages clés</li>
+              </ul>
+              <a href="expertise-campaign-strategy.html" aria-label="En savoir plus sur stratégie politique">En savoir plus <span>→</span></a>
+            </article>
+            <article class="mega-card" style="--card-bg: url('assets/card-bg-2.png')">
+              <svg><use href="#icon-megaphone"></use></svg>
+              <h3>Marketing politique</h3>
+              <i aria-hidden="true"></i>
+              <p>Concevoir des récits puissants et mobilisateurs.</p>
+              <ul>
+                <li>Marque politique &amp; identité</li>
+                <li>Narratif &amp; storytelling</li>
+                <li>Communication &amp; engagement</li>
+              </ul>
+              <a href="expertise-political-marketing.html" aria-label="En savoir plus sur marketing politique">En savoir plus <span>→</span></a>
+            </article>
+            <article class="mega-card" style="--card-bg: url('assets/card-bg-3.png')">
+              <svg><use href="#icon-phone"></use></svg>
+              <h3>Campagnes digitales</h3>
+              <i aria-hidden="true"></i>
+              <p>Activer, toucher et convertir les électeurs.</p>
+              <ul>
+                <li>Stratégie digitale</li>
+                <li>Social media &amp; community</li>
+                <li>Acquisition &amp; performance</li>
+              </ul>
+              <a href="expertise-digital-campaigns.html" aria-label="En savoir plus sur campagnes digitales">En savoir plus <span>→</span></a>
+            </article>
+            <article class="mega-card" style="--card-bg: url('assets/card-bg-4.png')">
+              <svg><use href="#icon-people"></use></svg>
+              <h3>Influence</h3>
+              <i aria-hidden="true"></i>
+              <p>Mobiliser les relais d’opinion et élargir votre portée.</p>
+              <ul>
+                <li>Relations influenceurs</li>
+                <li>Opinion leaders &amp; porte-paroles</li>
+                <li>Veille &amp; amplification</li>
+              </ul>
+              <a href="expertise-political-influence.html" aria-label="En savoir plus sur influence">En savoir plus <span>→</span></a>
+            </article>
+            <article class="mega-card" style="--card-bg: url('assets/card-bg-5.png')">
+              <svg><use href="#icon-pie"></use></svg>
+              <h3>Data &amp; AI Intelligence</h3>
+              <i aria-hidden="true"></i>
+              <p>Transformer la donnée en avantage stratégique.</p>
+              <ul>
+                <li>Analyse de l’opinion</li>
+                <li>Dashboards décisionnels</li>
+                <li>Prédictions électorales</li>
+              </ul>
+              <a href="expertise-data-ai-intelligence.html" aria-label="En savoir plus sur data et AI intelligence">En savoir plus <span>→</span></a>
+            </article>
+            <article class="mega-card" style="--card-bg: url('assets/card-bg-6.png')">
+              <svg><use href="#icon-bank"></use></svg>
+              <h3>Public Affairs</h3>
+              <i aria-hidden="true"></i>
+              <p>Influencer les décisions, bâtir des relations durables.</p>
+              <ul>
+                <li>Relations institutionnelles</li>
+                <li>Lobbying &amp; advocacy</li>
+                <li>Communication stratégique</li>
+              </ul>
+              <a href="expertises.html" aria-label="En savoir plus sur public affairs">En savoir plus <span>→</span></a>
+            </article>
+          </div>
+
+          <div class="mega-benefits">
+            <article><span><svg><use href="#icon-target"></use></svg></span><div><h3>Vision stratégique</h3><p>Une compréhension fine des enjeux politiques et sociétaux.</p></div></article>
+            <article><span><svg><use href="#icon-bulb"></use></svg></span><div><h3>Approche sur-mesure</h3><p>Des solutions adaptées à vos objectifs et à votre contexte.</p></div></article>
+            <article><span><svg><use href="#icon-shield"></use></svg></span><div><h3>Résultats mesurables</h3><p>Des stratégies pilotées par la donnée et orientées performance.</p></div></article>
+            <article><span><svg><use href="#icon-handshake"></use></svg></span><div><h3>Accompagnement engagé</h3><p>Une équipe senior à vos côtés, de la réflexion à l’exécution.</p></div></article>
+          </div>
+        </div>
+
+        <div class="hero-copy">
+          <h1><span>Shaping</span><span>Public Opinion.</span></h1>
+          <i aria-hidden="true"></i>
+          <p>Stratégie politique, marketing, digital, influence et data.</p>
+          <p>Des campagnes qui influencent, engagent et font gagner.</p>
+          <div class="hero-actions">
+            <a class="button button-filled" href="methodologie.html">Découvrir notre méthode</a>
+            <a class="button button-outline" href="expertises.html">Nos expertises</a>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="expertise" id="expertises">
+        <div class="section-heading">
+          <p>Notre expertise 360°</p>
+          <h2>L’alliance de la <span>stratégie,</span><br>du <span>digital</span> et de <span>l’influence.</span></h2>
+          <i aria-hidden="true"></i>
+        </div>
+
+        <div class="cards">
+          <article class="expertise-card" id="strategie-politique" style="--bg: url('assets/card-bg-1.png')">
+            <div class="story-bar"><b>C&amp;B</b><span>Carter &amp; Blake</span><em>1h</em></div>
+            <svg><use href="#icon-knight"></use></svg>
+            <h3>Stratégie<br>politique</h3>
+            <span class="card-cleaner" aria-hidden="true"></span>
+            <a href="expertise-campaign-strategy.html" aria-label="En savoir plus sur stratégie politique">En savoir plus</a>
+          </article>
+          <article class="expertise-card" id="marketing-politique" style="--bg: url('assets/card-bg-2.png')">
+            <div class="story-bar"><b>C&amp;B</b><span>Carter &amp; Blake</span><em>1h</em></div>
+            <svg><use href="#icon-megaphone"></use></svg>
+            <h3>Marketing<br>politique</h3>
+            <span class="card-cleaner" aria-hidden="true"></span>
+            <a href="expertise-political-marketing.html" aria-label="En savoir plus sur marketing politique">En savoir plus</a>
+          </article>
+          <article class="expertise-card" id="campagnes-digitales" style="--bg: url('assets/card-bg-3.png')">
+            <div class="story-bar"><b>C&amp;B</b><span>Carter &amp; Blake</span><em>1h</em></div>
+            <svg><use href="#icon-phone"></use></svg>
+            <h3>Campagnes<br>digitales</h3>
+            <span class="card-cleaner" aria-hidden="true"></span>
+            <a href="expertise-digital-campaigns.html" aria-label="En savoir plus sur campagnes digitales">En savoir plus</a>
+          </article>
+          <article class="expertise-card" id="influence" style="--bg: url('assets/card-bg-4.png')">
+            <div class="story-bar"><b>C&amp;B</b><span>Carter &amp; Blake</span><em>1h</em></div>
+            <svg><use href="#icon-people"></use></svg>
+            <h3>Influence</h3>
+            <span class="card-cleaner" aria-hidden="true"></span>
+            <a href="expertise-political-influence.html" aria-label="En savoir plus sur influence">En savoir plus</a>
+          </article>
+          <article class="expertise-card" id="data-ai-intelligence" style="--bg: url('assets/card-bg-5.png')">
+            <div class="story-bar"><b>C&amp;B</b><span>Carter &amp; Blake</span><em>1h</em></div>
+            <svg><use href="#icon-pie"></use></svg>
+            <h3>Data &amp; AI<br>intelligence</h3>
+            <span class="card-cleaner" aria-hidden="true"></span>
+            <a href="expertise-data-ai-intelligence.html" aria-label="En savoir plus sur data et AI intelligence">En savoir plus</a>
+          </article>
+          <article class="expertise-card" id="social-listening" style="--bg: url('assets/card-bg-6.png')">
+            <div class="story-bar"><b>C&amp;B</b><span>Carter &amp; Blake</span><em>1h</em></div>
+            <svg><use href="#icon-target"></use></svg>
+            <h3>Social<br>listening</h3>
+            <span class="card-cleaner" aria-hidden="true"></span>
+            <a href="expertise-social-listening.html" aria-label="En savoir plus sur social listening">En savoir plus</a>
+          </article>
+        </div>
+
+        <div class="expertise-directory" aria-labelledby="expertise-directory-title">
+          <div class="expertise-directory-head">
+            <p>Nos expertises</p>
+            <h3 id="expertise-directory-title">Six leviers pour structurer, activer et mesurer l’influence.</h3>
+          </div>
+          <div class="expertise-directory-list">
+            <a href="expertise-campaign-strategy.html"><span>01</span><svg><use href="#icon-knight"></use></svg><div><strong>Campaign Strategy</strong><p>Architecture, planning, war room et pilotage de campagne.</p></div></a>
+            <a href="expertise-political-marketing.html"><span>02</span><svg><use href="#icon-megaphone"></use></svg><div><strong>Marketing politique</strong><p>Positionnement, marque politique, narratif et image publique.</p></div></a>
+            <a href="expertise-digital-campaigns.html"><span>03</span><svg><use href="#icon-phone"></use></svg><div><strong>Campagnes digitales</strong><p>Meta, Google, TikTok, CRM, landing pages et automatisation.</p></div></a>
+            <a href="expertise-political-influence.html"><span>04</span><svg><use href="#icon-people"></use></svg><div><strong>Influence politique</strong><p>Médias, presse, créateurs, réputation et leadership d’opinion.</p></div></a>
+            <a href="expertise-data-ai-intelligence.html"><span>05</span><svg><use href="#icon-pie"></use></svg><div><strong>Data &amp; AI Intelligence</strong><p>Opinion publique, segmentation, dashboards et agents IA.</p></div></a>
+            <a href="expertise-social-listening.html"><span>06</span><svg><use href="#icon-target"></use></svg><div><strong>Social Listening</strong><p>Veille temps réel, sentiment, tendances et cartographie d’influence.</p></div></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats" aria-label="Chiffres clés">
+        <article><svg><use href="#icon-megaphone"></use></svg><strong data-count="150" data-suffix="+">150+</strong><span>Campagnes menées</span></article>
+        <article><svg><use href="#icon-users-network"></use></svg><strong data-count="30" data-suffix="+">30+</strong><span>Pays accompagnés</span></article>
+        <article><svg><use href="#icon-award"></use></svg><strong data-count="95" data-suffix="%">95%</strong><span>Taux de réussite</span></article>
+        <article><svg><use href="#icon-chart"></use></svg><strong data-count="20" data-suffix="M+">20M+</strong><span>Citoyens atteints</span></article>
+        <article><svg><use href="#icon-shield"></use></svg><strong data-count="100" data-suffix="%">100%</strong><span>Engagement &amp; Discrétion</span></article>
+      </section>
+
+      <section class="method" id="methodologie">
+        <div class="section-heading">
+          <p>Notre méthodologie</p>
+          <h2>Une <span>méthode</span> éprouvée.<br>Un <span>impact</span> mesurable.</h2>
+        </div>
+        <div class="method-steps">
+          <article>
+            <span class="round"><svg><use href="#icon-compass"></use></svg></span>
+            <b>01</b><h3>Diagnostic</h3>
+            <p>Audit stratégique<br>Analyse de l’opinion<br>Benchmark &amp; insights</p>
+          </article>
+          <article>
+            <span class="round"><svg><use href="#icon-clipboard"></use></svg></span>
+            <b>02</b><h3>Planification</h3>
+            <p>Positionnement<br>Narratif &amp; messages<br>Stratégie &amp; plan d’action</p>
+          </article>
+          <article>
+            <span class="round"><svg><use href="#icon-megaphone"></use></svg></span>
+            <b>03</b><h3>Exécution</h3>
+            <p>Campagnes &amp; contenu<br>Activation digitale &amp; média<br>Influence &amp; mobilisation</p>
+          </article>
+          <article>
+            <span class="round"><svg><use href="#icon-chart"></use></svg></span>
+            <b>04</b><h3>Pilotage</h3>
+            <p>Suivi en temps réel<br>Data &amp; optimisation<br>Reporting continu</p>
+          </article>
+          <article>
+            <span class="round"><svg><use href="#icon-target"></use></svg></span>
+            <b>05</b><h3>Évaluation</h3>
+            <p>Analyse des résultats<br>Mesure de l’impact<br>Capitalisation &amp; recommandations</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="partners" id="confiance">
+        <p>Nos partenaires</p>
+        <div class="partner-logos" aria-label="Partenaires Carter & Blake">
+          <a href="https://ads.google.com/" aria-label="Google Ads"><img src="assets/partners/googleads.svg" alt="Google Ads"><span>Google Ads</span></a>
+          <a href="https://www.meta.com/" aria-label="Meta"><img src="assets/partners/meta.svg" alt="Meta"><span>Meta</span></a>
+          <a href="https://www.tiktok.com/business/" aria-label="TikTok"><img src="assets/partners/tiktok.svg" alt="TikTok"><span>TikTok</span></a>
+          <a href="https://www.snapchat.com/business/" aria-label="Snapchat"><img src="assets/partners/snapchat.svg" alt="Snapchat"><span>Snapchat</span></a>
+          <a href="https://www.similarweb.com/" aria-label="Similarweb"><img src="assets/partners/similarweb.svg" alt="Similarweb"><span>Similarweb</span></a>
+          <a class="partner-lockup" href="https://carma.com/" aria-label="CARMA"><img src="assets/partners/carma.png" alt="CARMA"><span>CARMA</span></a>
+          <a class="partner-lockup" href="https://www.in-talks.ma/" aria-label="InTalks"><img src="assets/partners/intalks.png" alt="InTalks"><span>InTalks</span></a>
+          <a class="partner-lockup" href="https://www.hypeo.ai/fr" aria-label="Hypeo"><img src="assets/partners/hypeo.png" alt="Hypeo"><span>Hypeo</span></a>
+          <a class="partner-lockup" href="https://www.richmedia.ma/" aria-label="Richmedia"><img src="assets/partners/richmedia.png" alt="Richmedia"><span>Richmedia</span></a>
+        </div>
+      </section>
+
+      <section class="insights" id="insights">
+        <div class="insights-head">
+          <div>
+            <p>Insights</p>
+            <h2>Décrypter. Anticiper. Influencer.</h2>
+          </div>
+          <a href="#insights">Tous nos insights</a>
+        </div>
+        <div class="article-grid">
+          <article>
+            <figure><img src="assets/insight-1.png" alt=""><span>Analyse</span></figure>
+            <h3>Élections 2026 : les tendances qui changent la donne</h3>
+            <a href="accompagnement.html">Lire l’article →</a>
+          </article>
+          <article>
+            <figure><img src="assets/insight-2.png" alt=""><span>Data</span></figure>
+            <h3>L’IA au service de la stratégie politique</h3>
+            <a href="expertise-data-ai-intelligence.html">Lire l’article →</a>
+          </article>
+          <article>
+            <figure><img src="assets/insight-3.png" alt=""><span>Décryptage</span></figure>
+            <h3>Influence &amp; opinion publique : les nouveaux leviers</h3>
+            <a href="expertise-political-influence.html">Lire l’article →</a>
+          </article>
+          <article>
+            <figure><img src="assets/card-bg-2.png" alt=""><span>Marque</span></figure>
+            <h3>Construire une marque politique crédible et mémorisable</h3>
+            <a href="expertise-political-marketing.html">Lire l’article →</a>
+          </article>
+          <article>
+            <figure><img src="assets/card-bg-4.png" alt=""><span>Veille</span></figure>
+            <h3>Social listening : capter les signaux faibles avant la crise</h3>
+            <a href="expertise-social-listening.html">Lire l’article →</a>
+          </article>
+          <article>
+            <figure><img src="assets/card-bg-1.png" alt=""><span>Campagne</span></figure>
+            <h3>War room électorale : décider vite sans perdre le cap</h3>
+            <a href="war-room.html">Lire l’article →</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="newsletter" aria-label="Newsletter Carter & Blake">
+        <div class="newsletter-shell">
+          <div class="newsletter-copy">
+            <p>Newsletter</p>
+            <h2>Le brief stratégique qui arrive avant le bruit.</h2>
+            <span>Opinion publique, data électorale, influence et campagnes : recevez nos signaux utiles, sans surcharge.</span>
+          </div>
+          <form class="newsletter-form" action="mailto:contact@carterandblake.ma" method="post" enctype="text/plain">
+            <label for="newsletter-email">Email professionnel</label>
+            <div>
+              <input id="newsletter-email" name="email" type="email" placeholder="votre@email.com" required>
+              <button type="submit">S’abonner</button>
+            </div>
+            <small>Un envoi sélectif. Zéro spam. Confidentialité respectée.</small>
+          </form>
+          <div class="newsletter-signal" aria-hidden="true">
+            <b>CB Brief</b>
+            <span>Opinion</span>
+            <span>Data</span>
+            <span>Influence</span>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer" id="contact">
+        <div class="footer-cta">
+          <div>
+            <h2>Prêt à façonner l’opinion publique ?</h2>
+            <p>Discutons de votre projet en toute confidentialité.</p>
+          </div>
+          <a href="mailto:contact@carterandblake.ma">Prendre rendez-vous</a>
+        </div>
+        <div class="footer-main" id="apropos">
+          <section class="footer-brand">
+            <div class="footer-logo"><img src="assets/brand-mark.png" alt=""><strong>Carter &amp; Blake</strong></div>
+            <p>Nous aidons les dirigeants, partis et institutions à concevoir, piloter et gagner des campagnes qui comptent.</p>
+            <small>© 2025 Carter &amp; Blake. Tous droits réservés.</small>
+          </section>
+          <section>
+            <h3>Expertises</h3>
+            <a href="expertise-campaign-strategy.html">Campaign Strategy</a>
+            <a href="expertise-political-marketing.html">Marketing politique</a>
+            <a href="expertise-digital-campaigns.html">Campagnes digitales</a>
+            <a href="expertise-political-influence.html">Influence politique</a>
+            <a href="expertise-data-ai-intelligence.html">Data &amp; AI Intelligence</a>
+            <a href="expertise-social-listening.html">Social Listening</a>
+          </section>
+          <section>
+            <h3>Ressources</h3>
+            <a href="expertises.html">Expertises</a>
+            <a href="methodologie.html">Méthodologie</a>
+            <a href="technologies.html">Technologies</a>
+            <a href="accompagnement.html">Accompagnement</a>
+            <a href="contact.html">Contact</a>
+          </section>
+          <section>
+            <h3>Bureaux</h3>
+            <p>Casablanca, Maroc<br>Rabat, Maroc<br>Londres, Royaume-Uni</p>
+          </section>
+          <div class="contact-lines">
+            <a href="mailto:contact@carterandblake.ma">contact@carterandblake.ma</a>
+            <span>|</span>
+            <a href="tel:+212661172885">+212 661 172 885</a>
+            <span>|</span>
+            <a href="https://carterandblake.ma">carterandblake.ma</a>
+          </div>
+          <div class="footer-presence" aria-label="Présence Carter & Blake">
+            <p>Présence</p>
+            <div class="presence-globe" aria-hidden="true">
+              <span class="globe-orbit orbit-one"></span>
+              <span class="globe-orbit orbit-two"></span>
+              <span class="office-pin pin-casablanca"></span>
+              <span class="office-pin pin-rabat"></span>
+              <span class="office-pin pin-london"></span>
+            </div>
+            <ul class="presence-legend">
+              <li><strong>Casablanca</strong><em>Maroc</em></li>
+              <li><strong>Rabat</strong><em>Maroc</em></li>
+              <li><strong>Londres</strong><em>Royaume-Uni</em></li>
+            </ul>
+          </div>
+          <div class="socials" aria-label="Réseaux sociaux"><a href="https://facebook.com/carterandblakema">f</a><a href="https://instagram.com/carterandblakema">◎</a><a href="https://linkedin.com/company/carterandblakemaroc">in</a></div>
+        </div>
+      </footer>
+    </main>
+    <script>
+      (() => {
+        const counters = [...document.querySelectorAll(".stats strong[data-count]")];
+        const stats = document.querySelector(".stats");
+
+        if (!counters.length || !stats) return;
+
+        const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        let hasAnimated = false;
+
+        const formatValue = (value, suffix) => `${Math.round(value)}${suffix}`;
+        const easeOut = (progress) => 1 - Math.pow(1 - progress, 3);
+
+        const animateCounters = () => {
+          if (hasAnimated) return;
+          hasAnimated = true;
+
+          if (prefersReducedMotion) {
+            counters.forEach((counter) => {
+              counter.textContent = formatValue(Number(counter.dataset.count), counter.dataset.suffix || "");
+            });
+            return;
+          }
+
+          counters.forEach((counter, index) => {
+            const target = Number(counter.dataset.count);
+            const suffix = counter.dataset.suffix || "";
+            const duration = 1500 + index * 140;
+            const start = performance.now();
+
+            counter.textContent = formatValue(0, suffix);
+
+            const tick = (now) => {
+              const progress = Math.min((now - start) / duration, 1);
+              counter.textContent = formatValue(target * easeOut(progress), suffix);
+
+              if (progress < 1) {
+                requestAnimationFrame(tick);
+              } else {
+                counter.textContent = formatValue(target, suffix);
+              }
+            };
+
+            requestAnimationFrame(tick);
+          });
+        };
+
+        if ("IntersectionObserver" in window) {
+          const observer = new IntersectionObserver((entries) => {
+            if (entries.some((entry) => entry.isIntersecting)) {
+              animateCounters();
+              observer.disconnect();
+            }
+          }, { threshold: 0.35 });
+
+          observer.observe(stats);
+        } else {
+          window.addEventListener("load", animateCounters, { once: true });
+        }
+      })();
+    </script>
+  </body>
+</html>
