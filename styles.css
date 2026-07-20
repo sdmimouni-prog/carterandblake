@@ -520,6 +520,7 @@ svg {
 
 .mega-card {
   position: relative;
+  isolation: isolate;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -533,6 +534,37 @@ svg {
   background-size: cover;
   border-right: 1px solid rgba(17,26,44,.12);
   border-bottom: 1px solid rgba(17,26,44,.12);
+  transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease, background-position .42s ease;
+}
+
+.mega-card::before,
+.mega-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.mega-card::before {
+  z-index: 0;
+  opacity: 0;
+  background:
+    radial-gradient(circle at 20% 16%, rgba(231,162,58,.24), transparent 31%),
+    linear-gradient(135deg, rgba(255,255,255,.2), rgba(255,247,232,.82));
+  transition: opacity .28s ease;
+}
+
+.mega-card::after {
+  z-index: 0;
+  background: linear-gradient(115deg, transparent 0 34%, rgba(231,162,58,.22) 46%, transparent 58% 100%);
+  opacity: 0;
+  transform: translateX(-120%) skewX(-12deg);
+  transition: opacity .24s ease, transform .7s ease;
+}
+
+.mega-card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .mega-card:nth-child(3n) {
@@ -562,6 +594,7 @@ svg {
 
 .mega-card i {
   margin: 7px 0 9px;
+  transition: width .24s ease, box-shadow .24s ease, background-color .24s ease;
 }
 
 .mega-card p {
@@ -1385,8 +1418,8 @@ svg {
   max-width: 54px;
   height: 17px;
   object-fit: contain;
-  filter: brightness(0) saturate(100%) invert(8%) sepia(19%) saturate(1508%) hue-rotate(177deg) brightness(92%) contrast(99%);
-  opacity: .92;
+  filter: grayscale(1) brightness(0) contrast(1.1);
+  opacity: .9;
 }
 
 .partner-logos span {
@@ -1400,8 +1433,8 @@ svg {
   max-width: 78px;
   max-height: 22px;
   height: auto;
-  filter: none;
-  opacity: 1;
+  filter: grayscale(1) brightness(0) contrast(1.1);
+  opacity: .9;
 }
 
 .partner-logos .partner-lockup span {
@@ -2266,6 +2299,36 @@ svg {
   transition: transform .22s ease;
 }
 
+.mega-card:hover,
+.mega-card:focus-within {
+  z-index: 2;
+  border-color: rgba(231,162,58,.38);
+  box-shadow: inset 0 0 0 1px rgba(231,162,58,.35), 0 16px 32px rgba(1,16,34,.18);
+  transform: translateY(-2px);
+}
+
+.mega-card:hover::before,
+.mega-card:focus-within::before {
+  opacity: 1;
+}
+
+.mega-card:hover::after,
+.mega-card:focus-within::after {
+  opacity: 1;
+  transform: translateX(120%) skewX(-12deg);
+}
+
+.mega-card:hover h3,
+.mega-card:focus-within h3 {
+  color: #07111f;
+}
+
+.mega-card:hover i,
+.mega-card:focus-within i {
+  width: 42px;
+  box-shadow: 0 0 12px rgba(231,162,58,.38);
+}
+
 .expertise-card {
   transition: transform .28s ease, box-shadow .28s ease, border-color .28s ease;
 }
@@ -2380,11 +2443,12 @@ svg {
 .partner-logos a:hover img,
 .partner-logos a:focus-visible img {
   opacity: 1;
+  filter: grayscale(1) brightness(0) contrast(1.18);
   transform: scale(1.05);
 }
 
 .partner-logos img {
-  transition: opacity .22s ease, transform .22s ease;
+  transition: opacity .22s ease, transform .22s ease, filter .22s ease;
 }
 
 a:focus-visible {
