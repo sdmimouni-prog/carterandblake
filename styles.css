@@ -4084,7 +4084,7 @@ a:focus-visible {
   overflow: hidden;
   background:
     linear-gradient(105deg, rgba(1,16,34,.98) 0 46%, rgba(1,16,34,.72) 68%, rgba(1,16,34,.18) 100%),
-    var(--sub-bg, url("assets/hero-collage.png")) center / cover no-repeat,
+    var(--sub-bg, url("assets/hero-charte-collage.png")) center / cover no-repeat,
     var(--navy);
 }
 
@@ -5954,4 +5954,950 @@ a:focus-visible {
   .footer-presence p::after {
     font-size: 10px;
   }
+}
+
+/* Carter & Blake Maroc - visual charter refresh */
+:root {
+  --navy: #071220;
+  --navy-2: #0c1b2d;
+  --ink: #08111f;
+  --red: #b60712;
+  --red-2: #d4141f;
+  --green: #486431;
+  --green-2: #5f7b3f;
+  --bronze: #b98539;
+  --paper: #edeae8;
+  --paper-2: #f7f5f2;
+  --muted: #5e6572;
+  --gold: var(--red);
+  --gold-2: var(--green);
+}
+
+body {
+  background:
+    linear-gradient(135deg, rgba(182,7,18,.18), transparent 24%),
+    var(--navy);
+}
+
+.page {
+  background: var(--paper);
+}
+
+.brand img,
+.footer-logo img {
+  object-fit: contain;
+  object-position: center;
+}
+
+.brand-rule {
+  background: rgba(255,255,255,.62);
+}
+
+.brand-copy strong span {
+  color: var(--red-2);
+}
+
+.brand-copy small {
+  margin-top: 5px;
+  color: rgba(255,255,255,.9);
+  font-weight: 800;
+  letter-spacing: .35px;
+}
+
+.brand-copy small::before {
+  content: "MAROC";
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 5px 0 6px;
+  color: var(--green-2);
+  background:
+    linear-gradient(var(--green-2), var(--green-2)) left center / 54px 1px no-repeat,
+    linear-gradient(var(--green-2), var(--green-2)) right center / 54px 1px no-repeat;
+  font-size: .92em;
+  font-weight: 900;
+  letter-spacing: 7px;
+  line-height: 1;
+  text-align: center;
+}
+
+.brand-copy small::after {
+  display: none;
+}
+
+.nav a {
+  color: rgba(255,255,255,.92);
+  text-shadow: none;
+}
+
+.nav a:not(.nav-cta)::before,
+.nav a.is-active::before,
+.nav-expertise::before {
+  background: var(--red);
+}
+
+.nav-cta {
+  color: #fff;
+  border-color: rgba(255,255,255,.48);
+  background: rgba(182,7,18,.16);
+}
+
+.hero {
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    linear-gradient(112deg, var(--navy) 0 44%, #0b1d31 44% 100%);
+}
+
+.hero::before,
+.hero::after,
+.sub-hero::after,
+.war-hero::after {
+  content: "";
+  position: absolute;
+  pointer-events: none;
+}
+
+.hero::before {
+  z-index: 3;
+  top: 0;
+  right: min(57vw, 820px);
+  width: 72px;
+  height: 100%;
+  background:
+    linear-gradient(90deg, transparent 0 17%, var(--red) 17% 52%, var(--green) 52% 73%, transparent 73% 100%);
+  transform: skewX(-21deg);
+  opacity: .96;
+}
+
+.hero::after {
+  z-index: 4;
+  right: 0;
+  bottom: 0;
+  width: 280px;
+  height: 84px;
+  background: var(--red);
+  clip-path: polygon(32% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.hero-visual {
+  clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%, 0 45%);
+  filter: saturate(1.04) contrast(1.06);
+}
+
+.hero-veil {
+  background:
+    linear-gradient(90deg, rgba(7,18,32,1) 0 39%, rgba(7,18,32,.7) 49%, rgba(7,18,32,.1) 76%),
+    linear-gradient(180deg, rgba(7,18,32,.94) 0, rgba(7,18,32,.72) 15%, transparent 42%);
+}
+
+.hero-light-lines {
+  display: none;
+}
+
+.hero-copy {
+  z-index: 5;
+}
+
+.hero-copy h1,
+.section-heading h2,
+.about-hero h1,
+.about-history h2,
+.about-team h2,
+.about-mission h2,
+.sub-hero h1,
+.section-copy h2,
+.overview-panel h2,
+.contact-panel h2,
+.office-globe-panel h2,
+.footer-cta h2,
+.newsletter-copy h2,
+.quote-strip p,
+.war-hero-copy h1,
+.war-section-copy h2,
+.war-ai-head h2,
+.war-final-cta h2 {
+  font-family: var(--sans);
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero-copy h1 span:last-child,
+.section-heading h2 span,
+.about-team h2 span,
+.sub-hero h1 span,
+.section-copy h2 span,
+.overview-panel h2 span,
+.war-hero-copy h1 span,
+.war-section-copy h2 span {
+  color: var(--green);
+}
+
+.hero-copy i,
+.section-heading i,
+.about-hero-copy i,
+.about-history-copy i,
+.war-hero-copy i {
+  background: var(--red);
+}
+
+.button-filled,
+.newsletter-form button,
+.footer-cta a {
+  color: #fff;
+  border-color: var(--red);
+  background: linear-gradient(180deg, var(--red-2), var(--red));
+}
+
+.button-outline,
+.insights-head a,
+.mega-approach,
+.team-cta {
+  color: var(--red);
+  border-color: var(--red);
+  background: rgba(255,255,255,.08);
+}
+
+.hero .button-outline,
+.war-page .button-outline,
+.about-history .button-outline {
+  color: #fff;
+  border-color: rgba(255,255,255,.56);
+  background: rgba(7,18,32,.56);
+}
+
+.section-heading p,
+.insights-head p,
+.partners > p,
+.sub-kicker,
+.content-kicker,
+.about-history-copy > p:first-child,
+.about-team-head > div > p,
+.about-mission > div p,
+.war-kicker,
+.newsletter-copy p,
+.mega-intro h2 span,
+.mega-card svg,
+.mega-benefits svg,
+.footer-presence p {
+  color: var(--red);
+}
+
+.expertise,
+.about-adn,
+.about-team,
+.about-partners,
+.insights,
+.newsletter,
+.content-section {
+  background:
+    linear-gradient(90deg, rgba(7,18,32,.035) 0 1px, transparent 1px 62px),
+    linear-gradient(180deg, var(--paper-2), var(--paper));
+}
+
+.expertise-card {
+  color: var(--ink);
+  border: 1px solid rgba(8,17,31,.13);
+  border-radius: 6px;
+  background:
+    linear-gradient(180deg, #fff 0%, #f7f5f2 100%);
+  box-shadow: 0 14px 32px rgba(8,17,31,.1);
+}
+
+.expertise-card::before {
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(182,7,18,.06), transparent 30%),
+    linear-gradient(315deg, rgba(72,100,49,.09), transparent 34%);
+  filter: none;
+  opacity: 1;
+  transform: none;
+}
+
+.expertise-card::after {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: linear-gradient(90deg, var(--red) 0 58%, var(--green) 58% 100%);
+  animation: none;
+  transform: none;
+  box-shadow: none;
+}
+
+.story-bar,
+.expertise-card > .card-cleaner {
+  display: none;
+}
+
+.expertise-card svg {
+  color: var(--red);
+  filter: none;
+}
+
+.expertise-card h3 {
+  color: var(--ink);
+}
+
+.expertise-card h3::after {
+  background: var(--green);
+}
+
+.expertise-card a {
+  color: var(--red);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.expertise-card a::before {
+  content: "+";
+  color: var(--red);
+  border-color: rgba(182,7,18,.65);
+}
+
+.expertise-directory,
+.overview-panel,
+.feature-card,
+.overview-card,
+.technology-card,
+.value-card,
+.step-card,
+.contact-panel,
+.office-globe-panel,
+.method-steps,
+.article-grid article {
+  border-color: rgba(8,17,31,.13);
+  border-radius: 6px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,.98), rgba(247,245,242,.94));
+  box-shadow: 0 16px 34px rgba(8,17,31,.08);
+}
+
+.feature-card::before,
+.overview-card::before,
+.technology-card::before,
+.value-card::before {
+  width: 5px;
+  background: linear-gradient(180deg, var(--red), var(--green));
+}
+
+.card-num,
+.contact-list span,
+.social-list span {
+  color: var(--red);
+  border-color: rgba(182,7,18,.36);
+}
+
+.round,
+.mega-benefits span,
+.stats svg {
+  color: #fff;
+  background: var(--red);
+}
+
+.stats,
+.partners,
+.footer,
+.dark-band,
+.about-mission,
+.newsletter-shell,
+.war-page,
+.war-hero,
+.war-dashboard,
+.command-wall {
+  background:
+    linear-gradient(135deg, rgba(182,7,18,.16) 0 18%, transparent 18% 100%),
+    linear-gradient(315deg, rgba(72,100,49,.18) 0 16%, transparent 16% 100%),
+    linear-gradient(90deg, var(--navy), #0b1d31 54%, var(--navy));
+}
+
+.stats article:not(:last-child)::after,
+.proofs article,
+.about-values article,
+.footer-cta,
+.contact-lines {
+  border-color: rgba(255,255,255,.18);
+}
+
+.partners > p {
+  color: #fff;
+}
+
+.partner-logos a {
+  border-radius: 6px;
+}
+
+.sub-hero {
+  background:
+    linear-gradient(105deg, rgba(7,18,32,.98) 0 45%, rgba(7,18,32,.76) 65%, rgba(7,18,32,.16) 100%),
+    var(--sub-bg, url("assets/hero-charte-collage.png")) center / cover no-repeat,
+    var(--navy);
+}
+
+.sub-hero::before {
+  background:
+    linear-gradient(180deg, rgba(7,18,32,.96) 0, rgba(7,18,32,.45) 46%, transparent 80%);
+}
+
+.sub-hero::after,
+.war-hero::after {
+  z-index: 1;
+  top: -16%;
+  right: 12%;
+  width: 54px;
+  height: 132%;
+  background:
+    linear-gradient(90deg, transparent 0 16%, var(--red) 16% 55%, var(--green) 55% 78%, transparent 78% 100%);
+  transform: skewX(-22deg);
+  box-shadow: none;
+}
+
+.about-hero,
+.about-history,
+.war-final-cta {
+  background:
+    linear-gradient(100deg, rgba(7,18,32,1) 0 40%, rgba(7,18,32,.72) 58%, rgba(7,18,32,.12) 100%),
+    var(--navy);
+}
+
+.about-hero::after {
+  background:
+    linear-gradient(90deg, rgba(7,18,32,1) 0 38%, rgba(7,18,32,.62) 56%, rgba(7,18,32,.08) 86%),
+    linear-gradient(180deg, rgba(7,18,32,.94), rgba(7,18,32,.2) 42%, rgba(7,18,32,.16));
+}
+
+.mega-menu {
+  border-color: rgba(255,255,255,.26);
+  background: rgba(247,245,242,.98);
+}
+
+.mega-intro {
+  background:
+    linear-gradient(150deg, var(--navy) 0 72%, var(--red) 72% 79%, var(--green) 79% 100%);
+}
+
+.mega-card {
+  border-color: rgba(8,17,31,.1);
+}
+
+.war-command,
+.war-dashboard {
+  color: #fff;
+}
+
+.wall-line,
+.mini-lines span {
+  background: linear-gradient(90deg, var(--green), #ffffff, var(--red));
+}
+
+.morocco-map,
+.donut,
+.gauge {
+  background: conic-gradient(var(--green) 0 45%, var(--red) 45% 74%, rgba(255,255,255,.13) 74% 100%);
+}
+
+@media (min-width: 900px) {
+  .brand img {
+    width: 70px;
+    height: 78px;
+  }
+
+  .footer-logo img {
+    width: 70px;
+    height: 76px;
+  }
+
+  .brand-copy strong {
+    font-size: 27px;
+  }
+
+  .brand-copy small {
+    font-size: 8.4px;
+  }
+
+  .hero-copy {
+    width: min(650px, 46vw);
+    margin-top: 92px;
+  }
+
+  .hero-copy h1 {
+    font-size: 56px;
+    line-height: .96;
+  }
+
+  .hero-copy p {
+    max-width: 560px;
+    font-size: 20px;
+    line-height: 1.38;
+  }
+
+  .section-heading h2 {
+    font-size: 44px;
+  }
+
+  .expertise-card {
+    height: 330px;
+  }
+
+  .expertise-card svg {
+    width: 70px;
+    height: 70px;
+    margin-top: 64px;
+  }
+
+  .expertise-card h3 {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+
+  .expertise-card a {
+    bottom: 34px;
+  }
+
+  .sub-hero h1,
+  .about-hero h1 {
+    font-size: 64px;
+  }
+
+  .section-copy h2,
+  .overview-panel h2,
+  .contact-panel h2,
+  .office-globe-panel h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 899px) {
+  .brand img {
+    width: 56px;
+    height: 64px;
+  }
+
+  .brand-copy small::before {
+    max-width: 250px;
+    background:
+      linear-gradient(var(--green-2), var(--green-2)) left center / 34px 1px no-repeat,
+      linear-gradient(var(--green-2), var(--green-2)) right center / 34px 1px no-repeat;
+    letter-spacing: 5px;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 720px;
+  }
+
+  .hero::before {
+    right: 8%;
+    width: 46px;
+    opacity: .76;
+  }
+
+  .hero::after {
+    width: 170px;
+    height: 56px;
+  }
+
+  .hero-visual {
+    width: 100%;
+    height: 100%;
+    opacity: .42;
+    clip-path: none;
+  }
+
+  .hero-veil {
+    background:
+      linear-gradient(180deg, rgba(7,18,32,.98) 0 45%, rgba(7,18,32,.8) 68%, rgba(7,18,32,.96) 100%);
+  }
+
+  .hero-copy {
+    margin-top: 52px;
+  }
+
+  .hero-copy h1 {
+    font-size: 32px;
+    line-height: 1;
+  }
+
+  .hero-copy p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+    min-height: 42px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+    width: calc(100% - 44px);
+    gap: 14px;
+    margin-top: 28px;
+    margin-inline: auto;
+  }
+
+  .expertise-card {
+    height: 228px;
+    min-height: 228px;
+  }
+
+  .expertise-card svg {
+    width: 54px;
+    height: 54px;
+    margin-top: 42px;
+  }
+
+  .expertise-card h3 {
+    margin-top: 14px;
+    font-size: 18px;
+  }
+
+  .expertise-card a {
+    bottom: 24px;
+  }
+
+  .expertise-card a::before {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+  }
+
+  .sub-hero::after,
+  .war-hero::after {
+    right: 6%;
+    width: 40px;
+    opacity: .56;
+  }
+}
+
+.content-section {
+  background: transparent;
+}
+
+.dark-band .content-section {
+  background: transparent;
+}
+
+.dark-band .quote-strip p {
+  color: #fff;
+}
+
+@media (max-width: 899px) {
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    height: auto;
+    gap: 12px 0;
+    padding: 18px 22px;
+  }
+
+  .stats article {
+    grid-template-columns: 38px 1fr;
+    grid-template-rows: auto auto;
+    min-height: 52px;
+    padding-left: 0;
+  }
+
+  .stats article:not(:last-child)::after {
+    display: none;
+  }
+
+  .stats svg {
+    width: 34px;
+    height: 34px;
+  }
+
+  .stats strong {
+    font-size: 26px;
+  }
+
+  .stats span {
+    font-size: 9px;
+  }
+}
+
+/* Rolling white light over the hero photo dividers */
+.hero .hero-light-lines {
+  display: block;
+  z-index: 6;
+  top: 0;
+  right: 0;
+  width: min(64vw, 900px);
+  height: 100%;
+  clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%, 0 45%);
+  mix-blend-mode: screen;
+  opacity: .95;
+}
+
+.hero .light-line {
+  display: block;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.74), transparent);
+  box-shadow:
+    0 0 4px rgba(255,255,255,.86),
+    0 0 14px rgba(255,255,255,.34);
+  opacity: .62;
+}
+
+.hero .light-line::before {
+  inset: -7px -72px;
+  background: linear-gradient(90deg, transparent 0 34%, rgba(255,255,255,.05) 42%, rgba(255,255,255,1) 49%, rgba(255,255,255,.86) 54%, transparent 66% 100%);
+  filter: blur(.8px);
+  animation: heroLightRun var(--dur, 4.8s) cubic-bezier(.44,0,.2,1) infinite;
+}
+
+.hero .light-line::after {
+  content: "";
+  position: absolute;
+  inset: -2px -24px;
+  background: linear-gradient(90deg, transparent 0 44%, rgba(255,255,255,.95) 50%, transparent 58% 100%);
+  filter: blur(3px);
+  transform: translateX(-120%);
+  animation: heroLightRun var(--dur, 4.8s) cubic-bezier(.44,0,.2,1) infinite;
+  animation-delay: calc(var(--delay, 0s) - .12s);
+}
+
+.hero .line-a {
+  --x: 30%;
+  --y: 101%;
+  --w: 112%;
+  --r: -67deg;
+  --dur: 4.9s;
+  --delay: -.4s;
+}
+
+.hero .line-b {
+  --x: 51%;
+  --y: 47.2%;
+  --w: 58%;
+  --r: 0deg;
+  --dur: 5.6s;
+  --delay: -2.1s;
+}
+
+.hero .line-c {
+  --x: 72%;
+  --y: 0%;
+  --w: 66%;
+  --r: 73deg;
+  --dur: 5.2s;
+  --delay: -3.2s;
+}
+
+.hero .line-d {
+  --x: 17%;
+  --y: 58%;
+  --w: 56%;
+  --r: -66deg;
+  --dur: 5.8s;
+  --delay: -1.3s;
+}
+
+.hero .line-e {
+  --x: 64%;
+  --y: 101%;
+  --w: 54%;
+  --r: -48deg;
+  --dur: 6.1s;
+  --delay: -4.1s;
+}
+
+.hero .line-f {
+  --x: 82%;
+  --y: 47.6%;
+  --w: 36%;
+  --r: 0deg;
+  --dur: 5.4s;
+  --delay: -3.8s;
+}
+
+@media (max-width: 899px) {
+  .hero .hero-light-lines {
+    width: 100%;
+    opacity: .72;
+    clip-path: none;
+  }
+}
+
+/* Expertise cards back to photo stories */
+.expertise-card {
+  isolation: isolate;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 12px;
+  background: var(--navy);
+  box-shadow: 0 18px 42px rgba(8,17,31,.18);
+}
+
+.expertise-card::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  z-index: -2;
+  background-image:
+    linear-gradient(180deg, rgba(7,18,32,.02) 0%, rgba(7,18,32,.22) 28%, rgba(7,18,32,.78) 70%, rgba(7,18,32,.98) 100%),
+    var(--bg);
+  background-position: center;
+  background-size: cover;
+  filter: saturate(1.05) contrast(1.06);
+  transform: scale(1.04);
+  transition: transform .65s cubic-bezier(.2,.7,.2,1), filter .65s cubic-bezier(.2,.7,.2,1);
+}
+
+.expertise-card::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 14px;
+  right: 14px;
+  z-index: 3;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--red), #fff 58%, var(--green));
+  box-shadow: 0 0 14px rgba(255,255,255,.42);
+  transform: scaleX(0);
+  transform-origin: left center;
+  animation: storyProgress 6.4s linear infinite;
+  animation-delay: var(--story-delay, 0s);
+}
+
+.expertise-card > .card-cleaner {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  height: 62%;
+  background:
+    linear-gradient(180deg, rgba(7,18,32,0), rgba(7,18,32,.76) 20%, rgba(7,18,32,.97) 62%, var(--navy) 100%);
+  pointer-events: none;
+}
+
+.story-bar {
+  display: flex;
+  color: #fff;
+}
+
+.story-bar::before {
+  background: rgba(255,255,255,.18);
+}
+
+.story-bar b {
+  color: #fff;
+  background: var(--red);
+}
+
+.expertise-card svg {
+  color: #fff;
+  filter: drop-shadow(0 8px 18px rgba(0,0,0,.45));
+}
+
+.expertise-card h3 {
+  color: #fff;
+  text-shadow: 0 4px 14px rgba(0,0,0,.48);
+}
+
+.expertise-card h3::after {
+  background: var(--green);
+}
+
+.expertise-card a {
+  color: #fff;
+  text-shadow: 0 4px 14px rgba(0,0,0,.45);
+}
+
+.expertise-card a::before {
+  content: "+";
+  color: #fff;
+  border-color: rgba(255,255,255,.78);
+  background: rgba(182,7,18,.72);
+}
+
+.expertise-card:hover::before {
+  filter: saturate(1.14) contrast(1.12);
+  transform: scale(1.1);
+}
+
+.expertise-card:hover {
+  border-color: rgba(255,255,255,.38);
+}
+
+@media (min-width: 900px) {
+  .expertise-card {
+    height: 430px;
+  }
+
+  .expertise-card svg {
+    width: 76px;
+    height: 76px;
+    margin-top: 118px;
+  }
+
+  .expertise-card h3 {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  .expertise-card h3::after {
+    width: 48px;
+    height: 3px;
+    margin-top: 18px;
+  }
+
+  .expertise-card a {
+    bottom: 48px;
+    font-size: 12px;
+  }
+
+  .expertise-card a::before {
+    width: 31px;
+    height: 31px;
+    line-height: 31px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 899px) {
+  .expertise-card {
+    height: 300px;
+    min-height: 300px;
+  }
+
+  .story-bar {
+    font-size: 7px;
+  }
+
+  .expertise-card svg {
+    width: 58px;
+    height: 58px;
+    margin-top: 80px;
+  }
+
+  .expertise-card h3 {
+    font-size: 18px;
+  }
+
+  .expertise-card a {
+    bottom: 32px;
+  }
+}
+
+.hero .nav a.is-active {
+  color: #fff;
+  padding: 8px 10px;
+  margin: -8px -10px;
+  border-radius: 4px;
+  background: rgba(7,18,32,.72);
+  box-shadow: 0 0 0 1px rgba(255,255,255,.16);
+}
+
+.hero .nav a.is-active::before {
+  left: 10px;
+  right: 10px;
+  top: 32px;
+  background: #fff;
 }
